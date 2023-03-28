@@ -1,7 +1,5 @@
-function Scene() {
-    return (
-    <p>Our hero was floating through outer space when he spotted a spaceship in the distance.</p>
-    );
+function Scene(props) {
+  return <div>{props.line}</div>;
 }
 
 export default Scene;
