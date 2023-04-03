@@ -6,7 +6,12 @@ export const ButtonContainer = styled.div`
     width: 100%;
 `
 
-export const Buttons = styled.button`
+export const NextPrevButtons = styled.button`
     flex: 1;
     padding: 10px;
+`
+export const StoryTimeButton = styled.button`
+    border-color: none;
+    background-color: silver;
+    padding: 10px 15px;
 `
