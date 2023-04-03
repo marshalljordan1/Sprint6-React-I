@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("${(props) => props.background}");
+`
+
 export const ButtonContainer = styled.div`
     display: flex;
     justify-content: center;

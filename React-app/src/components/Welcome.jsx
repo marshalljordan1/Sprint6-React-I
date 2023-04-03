@@ -1,6 +1,6 @@
 import React from "react";
 import { StoryTimeButton } from "./Styled";
-import welcomeAstronaut from "/Users/jordanmarshall/OneDrive/ITacademy/Sprint6-React/react-app/img/welcomeAstronaut.jpg";
+import welcomeAstronaut from "/Users/jordanmarshall/OneDrive/ITacademy/Sprint6-React/react-app/src/img/welcomeAstronaut.jpg";
 
 export const Welcome = ({ next }) => {
   return (

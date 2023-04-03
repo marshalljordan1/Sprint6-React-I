@@ -1,5 +1,15 @@
-.body {
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+    margin: 0px;
     background-color: black;
+}
+
+.body{
+  background-color: black;
     display: flex;
 }
 
@@ -9,11 +19,12 @@
 
 .container {
     display: flex;
-    height: 53vw;
+    height: 100vh;
+    width: 100vw;
 }
 
 .left-container {
-    width: 50%;
+    width: 30%;
     padding: 0 80px;
     display: flex;
     text-align: left;
@@ -21,7 +32,7 @@
 }
 
 .right-container {
-    width:50%;
+    width: 70%;
     margin-left: 30px;
 }
 
@@ -34,42 +45,46 @@
     color: silver;
 }
 
-.prompt {
-    color: silver;
-}
-
 /* WHEN IT'S SMALL  */
 @media (max-width: 800px) {  
 
   .container {
     text-align: center;
     flex-direction: column;
-    height: 130vw;
+    height: 100vh;
+    width: 100vw;
   }
   
   .left-container {
     margin-top: 60px;
     display: flex;
     justify-content: center;
-    margin-left: 5%;
+    align-items: center;
     text-align: center;
-    width: 85vw;
+    width: 100%;
     padding: 0px;
   }
   .right-container {
     margin-left: 0;
-
+    height: 70vh;
+    width: 50vw;
   }
 
   .img {
         height: 100%;
         width: 200%;
   }
+
+  .info {
+    width: 80%;
+    margin: 20px auto;
+}
 }
   
   /* STORY PAGE */
   .text {
     text-align: center;
+    background-color: white;
     padding: 10px;
     margin: 10px;
     border: solid black 2px;

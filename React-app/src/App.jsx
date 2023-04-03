@@ -2,7 +2,11 @@ import Scene from "./components/scene/Scene";
 import React, { useState } from "react";
 import sentences from "./sentences.js";
 import { Welcome } from "./components/Welcome.jsx";
-import { NextPrevButtons, ButtonContainer } from "./components/Styled";
+import {
+  NextPrevButtons,
+  ButtonContainer,
+  Container,
+} from "./components/Styled";
 
 function App() {
   const [welcome, setWelcome] = useState(true);
@@ -22,7 +26,7 @@ function App() {
   return welcome === true ? (
     <Welcome next={click} />
   ) : (
-    <>
+    <Container background={sentences[position].img}>
       <ButtonContainer>
         <NextPrevButtons onClick={clickPrev}>Previous</NextPrevButtons>
         <NextPrevButtons onClick={clickNext}>Next</NextPrevButtons>
@@ -32,9 +36,10 @@ function App() {
           key={obj.id}
           line={obj.line}
           isHighlighted={position === obj.id}
+          img={obj.img}
         />
       ))}
-    </>
+    </Container>
   );
 }
 
